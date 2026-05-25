@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # SECURITY: Use environment variables, never hardcode keys
-API_KEY = os.getenv("AIzaSyCnbYYxP4PqDcmAYAqKpb3IkAgXC_yzVM4")
+API_KEY = os.getenv("AIzaSyAchqfkYIgjElKv17xNsnJUivbjkEZZ58k")
 
 DataBlueprint = {
     "type": "object",
