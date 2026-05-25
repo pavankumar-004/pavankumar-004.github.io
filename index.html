@@ -497,6 +497,10 @@
                 return;
             }
 
+            // Clean fallback router check:
+            // Since this is loaded in a web sandbox preview, we will try to make the request to your Render back-end,
+            // then we'll try to reach your local loopback, and if neither is available, we immediately generate simulated text 
+            // instead of breaking or dropping silent connection errors.
             try {
                 // First try live server endpoint
                 const response = await fetch('https://ai-dashboard-backend-k58b.onrender.com/api/chat', {
